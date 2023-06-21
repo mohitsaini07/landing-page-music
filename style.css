@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+  --navbar-height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+nav {
+  width: 100%;
+  height: var(--navbar-height);
+  background: var(--purple300);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Utility Classes  */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mx-auto {
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Utility Classes  */
+
+.nav__left {
+  color: var(--body);
+  font-weight: 600;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav__right > .nav__item {
+  color: var(--body);
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+  height: calc(100vh - var(--navbar-height));
+  position: relative;
+}
+
+.hero__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero__content {
+  color: var(--body);
+  width: clamp(20rem, 70vw, 50rem);
+}
+
+.hero__content .hero__title {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.hero__content .hero__subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 0.8rem;
+}
+
+.hero__content .hero__description {
+  font-size: 15px;
+}
+
+/* Music Section */
+
+.music {
+  padding: 40px;
+  background: var(--purple500);
+  color: var(--body);
+}
+.music .music_title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 70px;
+}
+.music .music_subtitle {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.music_description {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.primary_btn {
+  background-color: red;
+  border: none;
+  padding: 18px 15px;
+  color: var(--body);
+  margin-top: 32px;
+  font-size: 18px;
+}
+.music_last {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  font-weight: 300;
+}
+.ipad_iphone_img {
+  margin-top: -400px;
+  top: 400px;
+  position: relative;
+}
+/* Section About Music Container */
+
+.about_music_container h3 {
+  font-size: 1.7rem;
+  margin-top: 400px;
+}
+.about_music_container p{
+  font-size: 1.2rem;
+  padding: 30px 10px;
+}
+.secondary_btn{
+  background-color: var(--purple300);
+  color: var(--body);
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.video_section{
+  background-image: url(images/video.png);
+  color: var(--body);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+.video_section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100vh;
+  width: 800px;
+}
+.gift_section{
+  padding: 50px;
+}
+.gift_section .container{
+  display: flex;
+  gap: 100px;
+}
+.gift_content{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: 400;
+}
+.third_btn button{
+  background-color: var(--purple300);
+  color: var(--body);
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+/* Footer Section */
+
+.upper_footer{
+  background-color: #1B0058;
+}
+.upper_footer .container{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  color: var(--body);
+}
+.upper_footer h4{
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.footer_links ul li{
+  list-style-type: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 2px;
+}
+.lower_footer{
+  background-color:  var(--purple300);
+  color: var(--body);
+}
+.lower_footer p{
+  font-size: 0.9rem;
+  padding: 0.6rem ;
+  font-weight: 500;
+}
